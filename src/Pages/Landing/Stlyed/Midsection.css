@@ -1,0 +1,31 @@
+
+
+.useCase{
+    background-color: rgb(240,250,245);
+}
+
+
+.Use{
+    font-size: larger;
+    font-weight:600;
+    cursor: pointer;
+    margin-left: 0% !important;
+    text-align: left !important;
+}
+
+.Use:hover{
+    color: rgb(87,187,113);
+    
+}
+
+
+.Space{
+    height: 100px;
+   
+}
+
+
+.Space1{
+    margin:10px 0 15px 0 !important;
+    
+}
