@@ -6,9 +6,9 @@ import MainRoutes from "./Components/AllRoutes/MainRoutes";
 function App() {
   return (
     <div className="App">
-      {/* <Header/> */}
+      <Header />
       <MainRoutes />
-      {/* <Footer/> */}
+      <Footer />
     </div>
   );
 }
