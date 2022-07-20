@@ -1,0 +1,10 @@
+.List_bg_image {
+  background-image: url("https://blog-cdn.everhour.com/assets/images/new-design/background-elements/oval-dotted-orange-and-solid-green-combined.jpg");
+}
+.data_container:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.links {
+  color: blue;
+  text-decoration: underline;
+}
