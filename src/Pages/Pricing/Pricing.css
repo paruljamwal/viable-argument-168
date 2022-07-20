@@ -103,9 +103,10 @@ position: relative;
     margin-left: -5px;
     
   }
-  .actionbtn{
+  .actionbtns{
 margin-top:15px;
 width: 100%;
+
   }
   
   /* On mouse-over, add a deeper shadow */

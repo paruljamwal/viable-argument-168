@@ -44,7 +44,7 @@ const Pricingpage = () => {
                 <li>Fast and responsive support</li>
 
               </ul>
-              <button className='actionbtn'>Try free</button>
+              <button className='actionbtns'>Try free</button>
             </div>
           </div>
         </section>

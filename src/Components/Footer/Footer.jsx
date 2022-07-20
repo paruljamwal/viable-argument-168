@@ -11,12 +11,18 @@ useColorModeValue,
 Img,
 Image
 } from '@chakra-ui/react';
+import { FaTwitter} from 'react-icons/fa';
+// import { AiFillLinkedin } from 'react-icons/ai';
+import { FaYoutube } from 'react-icons/fa';
+import { FaFacebook } from 'react-icons/fa';
+import {BsLinkedin} from "react-icons/bs"
 import { FcGoogle } from 'react-icons/fc';
 import img from "./logoevery.jpeg"
 
 const Footer = () => {
   return (
     <>
+   
     <div >
       <div  className='rsContainer' style={{display:"flex"}} >
         <div  className='subdiv' >
@@ -56,9 +62,9 @@ const Footer = () => {
       </div>
       <Box
         bg={useColorModeValue('black', 'black')}
-        mb="33px"
+     
         color={"white"}>
-        <Container as={Stack} maxW={'1140px'} py={10} fontFamily="geomanist-regular',sans-serif" pt={"70px"}  >
+        <Container as={Stack} maxW={'1140px'} py={6} fontFamily="geomanist-regular',sans-serif" pt={"50px"}  >
           <Flex direction="row" justifyContent="space-evenly">
             <Stack>
             <Image src={img} className="picsize"  />
@@ -149,6 +155,16 @@ const Footer = () => {
             <Text fontSize={'sm'} textAlign={'left'}>
               © 2022 Everhour Terms  |  Privacy | Cookies |  Sitemap
             </Text>
+
+             <Text className='socialpic'>  
+            
+              <ul>
+                <li> <FaFacebook/> </li>
+                 <li><FaYoutube/></li>
+                <li><FaTwitter/></li>
+                 <li> <BsLinkedin/></li> 
+              </ul>
+                </Text> 
 
 
           </Box>

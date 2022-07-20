@@ -1,9 +1,9 @@
 .rsContainer{
-    height:"480px";
+    height:480px;
 width: 100%;
 
      justify-content: space-between;
-  height: 480px;
+ 
       margin: 8px;
       padding: 100px 20px 20px 20px;
 }
@@ -36,6 +36,7 @@ width: 100%;
     padding: 20px;
     margin-right: 10px;
     border: 1px solid black;
+    border-radius: 5px;
 }
 .page-subtitle>h3 {
     margin-left: -110px;
@@ -109,6 +110,20 @@ margin-right: 20px;
     height: 40px;
     border-radius: 50%;
     /* margin-left: ; */
+}
+.socialpic>ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    float: right;
+    /* background-color: red; */
+    margin-top: -25px;
+  
+}
+.socialpic>ul >li{
+margin: 5px;
+font-size: 20px;
+
 }
 
 
