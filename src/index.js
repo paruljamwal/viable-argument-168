@@ -4,16 +4,26 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider,extendTheme  } from '@chakra-ui/react'
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const colors={
+  primaryColor:{
+    color1:'#57bb71'
+  }
+}
+
+
+const theme=extendTheme({colors})
+
 root.render(
-  <React.StrictMode>
+  
     <BrowserRouter>
-    <ChakraProvider>
+    <ChakraProvider theme={theme} >
       <App />
     </ChakraProvider>
     </BrowserRouter>
-  </React.StrictMode>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
