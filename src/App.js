@@ -1,15 +1,14 @@
-
-import './App.css';
-import MainRoutes from './Components/AllRoutes/MainRoutes';
-import Header from './Components/Header/Header';
-import Footer from './Components/Footer/Footer';
+import "./App.css";
+import MainRoutes from "./Components/AllRoutes/MainRoutes";
+import Footer from "./Components/Footer/Footer";
+import Header from "./Components/Header/Header";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <MainRoutes/>
-      <Footer/>
+      <Header />
+      <MainRoutes />
+      <Footer />
     </div>
   );
 }
