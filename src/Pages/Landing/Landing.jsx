@@ -5,16 +5,17 @@ import GetMore from './Sections/GetMore'
 import MidSection from './Sections/MidSection'
 import PortFolio from './Sections/PortFolio'
 import Comment from './Sections/Comments'
+import { Box } from '@chakra-ui/react'
 const Landing = () => {
   return (
-    <div>
+    <Box mt={"6rem"}>
       <TopSection/>
       <MidSection/>
       <Carousol/>
       <Comment/>
       <PortFolio/>
       <GetMore/>
-    </div>
+    </Box>
   )
 }
 
