@@ -1,14 +1,18 @@
 import "./App.css";
 import MainRoutes from "./Components/AllRoutes/MainRoutes";
-// import Header from "./Components/Header/Header";
-// import Footer from "./Components/Footer/Footer";
+import Footer from "./Components/Footer/Footer";
+import Header from "./Components/Header/Header";
+
+
 
 function App() {
   return (
     <div className="App">
-      {/* <Header /> */}
+       <Header /> 
       <MainRoutes />
-      {/* <Footer /> */}
+      <Footer />
+
+
     </div>
   );
 }
