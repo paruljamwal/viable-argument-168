@@ -11,6 +11,13 @@ useColorModeValue,
 Img,
 Image
 } from '@chakra-ui/react';
+import {
+  List,
+  ListItem,
+  ListIcon,
+  OrderedList,
+  UnorderedList,
+} from '@chakra-ui/react'
 import { FaTwitter} from 'react-icons/fa';
 // import { AiFillLinkedin } from 'react-icons/ai';
 import { FaYoutube } from 'react-icons/fa';
@@ -18,48 +25,13 @@ import { FaFacebook } from 'react-icons/fa';
 import {BsLinkedin} from "react-icons/bs"
 import { FcGoogle } from 'react-icons/fc';
 import img from "./logoevery.jpeg"
+import UPPERFooter from './upperfooter';
 
 const Footer = () => {
   return (
     <>
-   
-    <div >
-      <div  className='rsContainer' style={{display:"flex"}} >
-        <div  className='subdiv' >
-          <h2 className='page-title'> Take control of your time with Everhour</h2>
-          <div className='page-subtitle'>
-            <h3>Beautiful integrations. Intuitive interface. No unexpected fees </h3>
-          </div>
-          <form className='signup_by_email'>
-            <div>
-              <input placeholder='Working email....'  className='inp' />
-              <button className='actionbtn'>Try free</button>
-            </div>
-
-            <span width="10px"><FcGoogle/> </span>
-            <a>Or sign up with Google Account</a>
-          
-          </form>
-        </div>
-
-        <div  style={{width:"370px" ,height:"230px" ,lineHeight:3.5}}  >
-          <ul className='dotlist'>
-            <li> <div className='circledic'></div>Track time from the apps you already use</li>
-            <li>Know where your team’s time is going</li>
-            <li>Keep projects on budget</li>
-            <br/>
-            <br/>
-            <br/>
-            <li>Increase transpa</li>
-            <li>Make your workflow more efficient</li>
-            <li>Spot burnout before it happens</li>
-
-          </ul>
-
-        </div>
-
-      </div>
-      </div>
+   <UPPERFooter/>
+    
       <Box
         bg={useColorModeValue('black', 'black')}
      
