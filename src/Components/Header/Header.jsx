@@ -97,7 +97,7 @@ export default function Header() {
             bg={"green.400"}
             href={"#"}
             _hover={{
-              bg: "pink.300",
+              bg: "green.300",
             }}
           >
             Sign Up

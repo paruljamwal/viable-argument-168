@@ -11,11 +11,11 @@ import PrivateRoute from "../PrivateRoute";
 const MainRoutes = () => {
   return (
     <Routes>
-     
-        <Route path='/' element={<Landing/>} ></Route>
-        <Route path='/customer'   element={<Customer/>}></Route>
-        <Route></Route>
-       <Route path='/price' element={<Pricingpage/>}/>
+
+      <Route path="/" element={<Landing />}></Route>
+       <Route path='/customer'   element={<Customer/>}></Route>
+      <Route path="/price" element={<Pricingpage />} />
+      <Route path="/request-a-demo" element={<Demo />}></Route>  
       <Route path="/signup" element={<Register />}></Route>
       <Route path="/login" element={<Login />}></Route>
       <Route
@@ -26,14 +26,7 @@ const MainRoutes = () => {
           </PrivateRoute>
         }
       ></Route>
-      <Route
-        path="/request-a-demo"
-        element={
-          <PrivateRoute>
-            <Demo />
-          </PrivateRoute>
-        }
-      ></Route>
+
     </Routes>
 
 
