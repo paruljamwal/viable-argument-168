@@ -123,7 +123,7 @@ width: 152px;
 
 export const Box1=styled.div` 
  margin: 5% auto;
- 
+
 
 `;
 
@@ -131,7 +131,8 @@ export const Box1=styled.div`
 export const Video=styled.div` 
  width: 82%;
  margin:5% auto;
- background-color: rebeccapurple;
+
+
  
 @media only screen and (max-width: 768px)  {
    width: 100%;
@@ -142,6 +143,7 @@ export const Video=styled.div`
 
 export const Image=styled.img` 
  width: 100%;
+
  `;
 
 // export const Load=styled.div` 
@@ -221,5 +223,14 @@ export const Pro=styled.div`
    margin:5% 0 2% 30%;
    
 }
+
+`;
+
+
+export const LoadingImg=styled.img` 
+position: relative;
+width :100px ;
+top: -800;
+left: 45%;
 
 `;

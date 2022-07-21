@@ -7,6 +7,7 @@ import MidSection from './Sections/MidSection'
 import PortFolio from './Sections/PortFolio'
 import Comment from './Sections/Comments'
 import { Box } from '@chakra-ui/react'
+
 const Landing = () => {
   return (
     <Box mt={"6rem"}>

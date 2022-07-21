@@ -5,7 +5,7 @@ import styled from "styled-components";
 export const Box9=styled.div` 
 border: 1px solid transparent;
 width: 90%;
-height: 500px;
+height: 600px;
 margin:5% auto;
 @media only screen and (max-width: 768px) {
    height: auto;
