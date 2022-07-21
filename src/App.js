@@ -3,12 +3,16 @@ import MainRoutes from "./Components/AllRoutes/MainRoutes";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 
+
+
 function App() {
   return (
     <div className="App">
-      <Header />
+       <Header /> 
       <MainRoutes />
       <Footer />
+
+
     </div>
   );
 }

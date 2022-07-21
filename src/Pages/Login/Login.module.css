@@ -1,0 +1,45 @@
+.login_links {
+  color: #4a90e2;
+  text-decoration: underline;
+}
+.login_links:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.login_other_options:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.bg_image {
+  background-image: url("https://img.freepik.com/premium-vector/abstract-dotted-background-halftone-design-spotted-white-gray-texture-presentation-template_547648-2084.jpg?w=740");
+}
+.login_data_container:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.readmore_btn {
+  background-color: transparent;
+  color: #57bb71;
+  border: 1px solid #57bb71;
+  border-radius: 8px;
+  width: 150px;
+  height: 50px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.readmore_btn:hover {
+  color: white;
+  background-color: #57bb71;
+  box-shadow: rgba(36, 202, 31, 0.877) 0px 5px 15px;
+}
+.login_btn {
+  background-color: #57bb71;
+  color: white;
+  width: 60%;
+  height: 60px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.login_btn:hover {
+  background-color: #57bb71;
+  box-shadow: rgba(36, 202, 31, 0.877) 0px 5px 15px;
+}

@@ -1,3 +1,4 @@
+
 import React from 'react'
 import TopSection from './Sections/TopSection'
 import Carousol from './Sections/Carousol'
@@ -19,4 +20,4 @@ const Landing = () => {
   )
 }
 
-export default Landing
+export default Landing;
