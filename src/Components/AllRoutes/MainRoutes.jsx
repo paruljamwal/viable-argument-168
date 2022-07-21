@@ -9,7 +9,7 @@ const MainRoutes = () => {
     <Routes>
       <Route path="/" element={<Landing />}></Route>
       <Route path="/tour" element={<Tour />}></Route>
-      <Route></Route>
+      <Route ></Route>
       <Route path="/price" element={<Pricingpage />} />
       <Route path="/request-a-demo" element={<Demo />}></Route>
     </Routes>
