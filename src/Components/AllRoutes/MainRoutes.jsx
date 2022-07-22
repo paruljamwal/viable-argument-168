@@ -8,6 +8,8 @@ import Customer from "../../Pages/Customer/Customer";
 import Login from "../../Pages/Login/Login";
 import Register from "../../Pages/Register/Register";
 import PrivateRoute from "../PrivateRoute";
+import Clients from "../../Pages/usetimer/Clients";
+import Table from "../../Pages/usetimer/table";
 const MainRoutes = () => {
   return (
     <Routes>
@@ -18,14 +20,22 @@ const MainRoutes = () => {
       <Route path="/request-a-demo" element={<Demo />}></Route>
       <Route path="/signup" element={<Register />}></Route>
       <Route path="/login" element={<Login />}></Route>
-      {/* <Route
-        path="/#/"
+      <Route
+        path="/#/time"
         element={
           <PrivateRoute>
-            <Tour />
+            <Table />
           </PrivateRoute>
         }
-      ></Route> */}
+      ></Route>
+      <Route
+        path="/#/clients"
+        element={
+          <PrivateRoute>
+            <Clients />
+          </PrivateRoute>
+        }
+      ></Route>
     </Routes>
   );
 };

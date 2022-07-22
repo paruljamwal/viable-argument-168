@@ -1,8 +1,5 @@
 import React, { ReactNode } from "react";
 import {
-  IconButton,
-  Box,
-  CloseButton,
   Flex,
   Icon,
   useColorModeValue,
