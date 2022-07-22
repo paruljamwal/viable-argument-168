@@ -7,19 +7,35 @@ import Landing from "../../Pages/Landing/Landing";
 import Customer from "../../Pages/Customer/Customer";
 import Login from "../../Pages/Login/Login";
 import Register from "../../Pages/Register/Register";
-
+import PrivateRoute from "../PrivateRoute";
+import Clients from "../../Pages/usetimer/Clients";
+import Table from "../../Pages/usetimer/table";
 const MainRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Landing />}></Route>
-
       <Route path="/customer" element={<Customer />}></Route>
       <Route path="/price" element={<Pricingpage />} />
       <Route path="/request-a-demo" element={<Demo />}></Route>
       <Route path="/signup" element={<Register />}></Route>
       <Route path="/login" element={<Login />}></Route>
-      <Route path="/tour" element={<Tour />}></Route>
-      
+<Route path="/tour" element={<Tour />}></Route>
+      <Route
+        path="/#/time"
+        element={
+          <PrivateRoute>
+            <Table />
+          </PrivateRoute>
+        }
+      ></Route>
+      <Route
+        path="/#/clients"
+        element={
+          <PrivateRoute>
+            <Clients />
+          </PrivateRoute>
+        }
+      ></Route>
     </Routes>
   );
 };
