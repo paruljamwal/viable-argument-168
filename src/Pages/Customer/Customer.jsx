@@ -5,7 +5,7 @@ import People from './People'
 import { tourText } from './TourText'
 const Customer = () => {
   return (
-    <div>
+    <div className='MainBox'>
     <div className='h1parent'>
     <h1 className='h1'>What our l😍vely customers
           are saying</h1>

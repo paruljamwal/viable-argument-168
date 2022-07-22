@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import {  ButtonBox, Carousel, Left, Right, Slide } from "../Stlyed/Carousal.styled";
 import SlideImages from "./Images";
+import {ChevronLeftIcon,ChevronRightIcon} from '@chakra-ui/icons'
+
 const Stepper = () => {
   let SliderArray = [
     <SlideImages
@@ -53,7 +55,7 @@ const Stepper = () => {
    
      <span>
       <Left onClick={Goleft}>
-        <img src='https://cdn-icons.flaticon.com/png/128/2989/premium/2989985.png?token=exp=1658381376~hmac=d31939a0287a512d9efe29e5c76eac03' alt="left"></img>
+       <ChevronLeftIcon w={6} h={6}/>
       </Left>
 
      </span>
@@ -72,7 +74,7 @@ const Stepper = () => {
      <span>
 
       <Right onClick={GoRight}>
-        <img src="https://cdn-icons.flaticon.com/png/128/2989/premium/2989988.png?token=exp=1658347686~hmac=3df14b1921c85b7f873058f7ad0a8da2" alt="" />
+       <ChevronRightIcon w={6} h={6}/>
       </Right>
      </span>
 
