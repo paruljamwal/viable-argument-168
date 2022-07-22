@@ -1,8 +1,15 @@
 import React from 'react'
-import { Stack, Box, Flex, Button, Input, Checkbox,Select } from "@chakra-ui/react";
+import {Text, Stack, Box, Flex, Button, Input, Checkbox,Select, Container } from "@chakra-ui/react";
 import { useState } from 'react';
+import { useParams } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import TaskCard from './TaskCard'
+
 const Projects = () => {
+    const {id}=useParams;
+    const data=useSelector(store=> store.userReducer.tasks)
     const [list ,setlist] =useState(false)
+
     return (
         <Box>
             <Box className="App" position="relative"  >
@@ -38,13 +45,56 @@ Client</option>
 
 </Select>
 <Input  w="250px" placeholder='search projects'/>
+           
 </Box>
-                    
+            
+           
                     </Flex>
+             <div border={"1px solid gray"} style={{ display:"flex" , height:"500px", width:"100%" }} >
+
+             <div style={{flex:"1" }} >
+              <Text  fontSize={"2rem"} textAlign={"center"} >Todo</Text>
+              <div  style={{border:"1px solid gray", height:"400px"}} >
+                {
+                  data.length >0 && data.filter((e)=>e.status==="Todo")
+                  .map((e)=>{
+                    return <TaskCard key={e.id} {...e}  />
+                  })
+                }
+              </div>
+
+
+             </div>
+             <div style={{flex:"1" }} >
+             <Text fontSize={"2rem"} textAlign={"center"} >In-Progress</Text>
+             <div  style={{border:"1px solid gray", height:"400px"}} >
+             {
+                  data.length >0 && data.filter((e)=>e.status==="InProgress")
+                  .map((e)=>{
+                    return <TaskCard key={e.id} {...e}  />
+                  })
+                }
+             </div>
+
+             </div>
+             <div style={{flex:"1"}} >
+             <Text fontSize={"2rem"} textAlign={"center"} >Done</Text>
+             <div  style={{border:"1px solid gray" , height:"400px"}}>
+             {
+                  data.length >0 && data.filter((e)=>e.status==="Done")
+                  .map((e)=>{
+                    return <TaskCard key={e.id} {...e}  />
+                  })
+                }
+             </div>
+
+             </div>
+             </div>
+                      {/* <img w={"30px"} src='https://blog-cdn.everhour.com/assets/images/new-design/illustrations/primary-illustrations/all-features-3.png' ></img> */}
                 </Stack>
             </Box>
             </Box>
             )
 }
 
-            export default Projects
+export default Projects
