@@ -1,19 +1,26 @@
+
 import "./App.css";
-import MainRoutes from "./Components/AllRoutes/MainRoutes";
-// import CompLogo from "./Components/CompLogo/CompLogo";
-import Footer from "./Components/Footer/Footer";
-import Header from "./Components/Header/Header";
-// import Tour from "./Pages/Tour/Tour";
+import Clients from "./Pages/usetimer/Clients";
+import Projects from "./Pages/usetimer/Projects";
+import Table from "./Pages/usetimer/table";
+import Timer from "./Pages/usetimer/Timer";
+
+
 
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <MainRoutes />
-      <Footer />
-
-    </div>
+    <>
+<div>
+      <Table/>
+{/* <Projects/> */}
+  {/* <Clients/> */}
+  {/* <Timer/> */}
+  </div>
+ 
+      
+      </>
+ 
   );
 }
 
