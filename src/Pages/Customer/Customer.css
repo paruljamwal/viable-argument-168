@@ -1,0 +1,130 @@
+.h1{
+    margin-top: 80px;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.MainBox{
+    border: 1px solid transparent;
+    width: 90%;
+    margin: 6% ;
+}
+.h1parent{
+    
+    width: 90%;
+    margin: auto;
+}
+.section1{
+    display:grid;
+    width: 500px;
+  
+  margin-left: 80px;
+  margin-bottom: -40px;
+}
+
+.section1>div>p{
+    color: rgb(173, 172, 171);
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+}
+.section1>div>h1{
+    font-size: 35px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 45px;
+}
+.section2>.q{
+    width: 100px;
+   
+}
+.section2>.q>h1{
+   font-size: 250px;
+   
+}
+.section2{
+    display: flex;
+    width: 640px;
+    justify-content: space-between;
+}
+.text{
+    width: 500px;
+    height: 500px;
+    text-align: left;
+    
+    
+}
+.text1{
+    margin-top: 30px;
+}
+.text1>p{
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 26px;
+   font-weight: 400;
+}
+.text>p{
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 26px;
+   font-weight: 400;
+}
+.ancor{
+    color: rgb(65, 65, 236);
+    font-size: 1.25rem;
+    line-height: 26px;
+    text-decoration: underline;
+}
+.below{
+    display: flex;
+   align-items: center;
+   justify-content: space-around;
+   height: 700px;
+
+}
+.image{
+    width: 400px;
+    height: 500px;
+    margin-top: -350px;
+}
+.image2{
+    width: 80px;
+    height: 50px;
+}
+.khali{
+    height:340px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: rgb(245, 212, 213);
+    margin-left: -30px;
+}
+.fali{
+    width: 480px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: rgb(245, 212, 213);
+    margin-top: -270px;
+    margin-left: 135px;
+}
+.total{
+    margin-top: 160px;
+}
+
+.all{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    
+}
+.all>img{
+    height: 120px;
+    margin-top: 100px;
+}
+.p{
+    margin-top: 100px;
+   text-align: center;
+}
+.review{
+    margin-top: 100px;
+}

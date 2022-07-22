@@ -22,11 +22,21 @@ import {
   ChevronRightIcon,
 } from "@chakra-ui/icons";
 import logo from "../../Pages/Image/EverhourLogo.svg";
-
+import { Link as RoutingLink } from "react-router-dom";
+import {useNavigate} from 'react-router-dom'
 export default function Header() {
   const { isOpen, onToggle } = useDisclosure();
+   const navigate=useNavigate();
 
+  const GotoSign=()=>{
+    navigate('/login')
+  }
+
+   const GotoReg=()=>{
+    navigate('/signup')
+   }
   return (
+   
     <Box position={"fixed"} w={"100%"} mt={"-6rem"}>
       <Flex
         bg={useColorModeValue("white", "gray.800")}
@@ -38,7 +48,8 @@ export default function Header() {
         borderStyle={"solid"}
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
-      >
+      > 
+    
         <Flex
           flex={{ base: 1, md: "auto" }}
           ml={{ base: -2 }}
@@ -59,18 +70,20 @@ export default function Header() {
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
           ></Text>
-          <img
+    <RoutingLink to='/'>
+       
+            <img
             src={logo}
             alt="lg"
             width={"30px"}
             style={{ marginLeft: "50px", marginRight: "-40px" }}
           />
+        </RoutingLink>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
           </Flex>
         </Flex>
-
         <Stack
           flex={{ base: 1, md: 0 }}
           justify={"flex-end"}
@@ -80,7 +93,7 @@ export default function Header() {
           pl={"125px"}
           paddingRight={"25px"}
         >
-          <Button
+          <Button onClick={GotoSign}
             as={"a"}
             fontSize={"lg"}
             fontWeight={450}
@@ -89,7 +102,7 @@ export default function Header() {
           >
             Sign In
           </Button>
-          <Button
+          <Button onClick={GotoReg}
             display={{ base: "none", md: "inline-flex" }}
             fontSize={"m"}
             fontWeight={500}
@@ -97,7 +110,7 @@ export default function Header() {
             bg={"green.400"}
             href={"#"}
             _hover={{
-              bg: "pink.300",
+              bg: "green.300",
             }}
           >
             Sign Up
@@ -122,7 +135,7 @@ const DesktopNav = () => {
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
-            <PopoverTrigger>
+          <PopoverTrigger>
               <Link
                 p={2}
                 href={navItem.href ?? "#"}
@@ -163,6 +176,8 @@ const DesktopNav = () => {
 
 const DesktopSubNav = ({ label, href, subLabel }) => {
   return (
+   
+   
     <Link
       href={href}
       role={"group"}
@@ -195,6 +210,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
         </Flex>
       </Stack>
     </Link>
+   
   );
 };
 
@@ -216,6 +232,7 @@ const MobileNavItem = ({ label, children, href }) => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
+   
     <Stack spacing={4} onClick={children && onToggle}>
       <Flex
         py={2}
@@ -262,6 +279,7 @@ const MobileNavItem = ({ label, children, href }) => {
         </Stack>
       </Collapse>
     </Stack>
+  
   );
 };
 
