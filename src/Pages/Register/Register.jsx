@@ -1,6 +1,8 @@
 import React from "react";
 import { Box, Button, Heading, Image, Input, Text } from "@chakra-ui/react";
 import styles from "../Login/Login.module.css";
+import { arrayUi } from "./uidata";
+import Review from "../../Components/Review/Review";
 const Register = () => {
   return (
     <div>
@@ -13,6 +15,7 @@ const Register = () => {
           fontFamily={"'geomanist-book',sans-serif"}
           color="#333"
           mb="15px"
+          textAlign={"center"}
         >
           Make your team more productive with Everhour
         </Heading>
@@ -23,6 +26,7 @@ const Register = () => {
           fontFamily={"'geomanist-book',sans-serif"}
           lineHeight="1.36"
           color="#767676"
+          textAlign={"center"}
         >
           Speed, flexibility, ability to integrate with the most popular project
           management software. Everhour is a time tracking tool your team will
@@ -62,7 +66,7 @@ const Register = () => {
             ></Image>{" "}
             <Text mr="27%">Log in with Google</Text>
           </Button>
-          <Text color="#7c7c7c" mb="10px">
+          <Text color="#7c7c7c" mb="10px" textAlign={"center"}>
             or
           </Text>
           <Input placeholder="Work email..." w="100%" h="50px" mb="30px" />
@@ -109,6 +113,7 @@ const Register = () => {
           fontFamily={"'geomanist-book',sans-serif"}
           color="#333"
           mb="15px"
+          textAlign={"center"}
         >
           A time tracker you can trust for life
         </Heading>
@@ -119,13 +124,17 @@ const Register = () => {
           fontFamily={"'geomanist-book',sans-serif"}
           lineHeight="1.36"
           color="#767676"
+          textAlign={"center"}
+          mb="5%"
         >
           We could tell you about the thousands of companies worldwide that use
           our software for their timekeeping needs… but we thought it best they
           speak for themselves.
         </Heading>
       </Box>
-      {/* Email Boxes Grid by raju */}
+      <Box>
+        <Review tourText={arrayUi} />
+      </Box>
 
       <button className={styles.readmore_btn}>Read more</button>
     </div>

@@ -14,6 +14,7 @@ import {
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
+  Image,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -23,21 +24,20 @@ import {
 } from "@chakra-ui/icons";
 import logo from "../../Pages/Image/EverhourLogo.svg";
 import { Link as RoutingLink } from "react-router-dom";
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 export default function Header() {
   const { isOpen, onToggle } = useDisclosure();
-   const navigate=useNavigate();
+  const navigate = useNavigate();
 
-  const GotoSign=()=>{
-    navigate('/login')
-  }
+  const GotoSign = () => {
+    navigate("/login");
+  };
 
-   const GotoReg=()=>{
-    navigate('/signup')
-   }
+  const GotoReg = () => {
+    navigate("/signup");
+  };
   return (
-   
-    <Box position={"fixed"} w={"100%"} mt={"-6rem"}>
+    <Box position={"fixed"} w={"100%"} top="0" left="0" right="0" zIndex="9999">
       <Flex
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
@@ -48,8 +48,7 @@ export default function Header() {
         borderStyle={"solid"}
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
-      > 
-    
+      >
         <Flex
           flex={{ base: 1, md: "auto" }}
           ml={{ base: -2 }}
@@ -70,17 +69,17 @@ export default function Header() {
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
           ></Text>
-    <RoutingLink to='/'>
-       
-            <img
-            src={logo}
-            alt="lg"
-            width={"30px"}
-            style={{ marginLeft: "50px", marginRight: "-40px" }}
-          />
-        </RoutingLink>
+          <RoutingLink to="/">
+            <Image
+              src={logo}
+              alt="lg"
+              marginLeft="50px"
+              marginRight={{ md: "25px", lg: "-4px" }}
+              width="30px"
+            />
+          </RoutingLink>
 
-          <Flex display={{ base: "none", md: "flex" }} ml={10}>
+          <Flex display={{ base: "none", md: "flex" }}>
             <DesktopNav />
           </Flex>
         </Flex>
@@ -93,7 +92,8 @@ export default function Header() {
           pl={"125px"}
           paddingRight={"25px"}
         >
-          <Button onClick={GotoSign}
+          <Button
+            onClick={GotoSign}
             as={"a"}
             fontSize={"lg"}
             fontWeight={450}
@@ -102,7 +102,8 @@ export default function Header() {
           >
             Sign In
           </Button>
-          <Button onClick={GotoReg}
+          <Button
+            onClick={GotoReg}
             display={{ base: "none", md: "inline-flex" }}
             fontSize={"m"}
             fontWeight={500}
@@ -135,7 +136,7 @@ const DesktopNav = () => {
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
-          <PopoverTrigger>
+            <PopoverTrigger>
               <Link
                 p={2}
                 href={navItem.href ?? "#"}
@@ -176,8 +177,6 @@ const DesktopNav = () => {
 
 const DesktopSubNav = ({ label, href, subLabel }) => {
   return (
-   
-   
     <Link
       href={href}
       role={"group"}
@@ -210,7 +209,6 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
         </Flex>
       </Stack>
     </Link>
-   
   );
 };
 
@@ -232,7 +230,6 @@ const MobileNavItem = ({ label, children, href }) => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-   
     <Stack spacing={4} onClick={children && onToggle}>
       <Flex
         py={2}
@@ -279,7 +276,6 @@ const MobileNavItem = ({ label, children, href }) => {
         </Stack>
       </Collapse>
     </Stack>
-  
   );
 };
 
