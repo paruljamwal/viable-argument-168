@@ -2,7 +2,7 @@ import React from 'react'
 import { Stack, Box, Flex, Button, Input, Checkbox,Select } from "@chakra-ui/react";
 import { useState } from 'react';
 const Projects = () => {
-    // const [list ,setlist] =useState(false)
+    const [list ,setlist] =useState(false)
     return (
         <Box>
             <Box className="App" position="relative"  >
