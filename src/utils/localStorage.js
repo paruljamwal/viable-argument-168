@@ -11,6 +11,8 @@ const saveLocalData = (key, value) => {
   }
 };
 
+// this is for form of details subbimssion
+
 const getFormData = (key) => {
   if (key) {
     const Fdata = localStorage.getItem(key);

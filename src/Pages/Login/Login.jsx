@@ -46,6 +46,7 @@ const Login = () => {
           fontFamily={"'geomanist-book',sans-serif"}
           color="#333"
           mb="15px"
+          textAlign="center"
         >
           Log in to Everhour
         </Heading>
@@ -56,6 +57,7 @@ const Login = () => {
           fontFamily={"'geomanist-book',sans-serif"}
           lineHeight="1.36"
           color="#767676"
+          textAlign="center"
         >
           Using the former version of Everhour? Please{" "}
           <Link className={styles.login_links} to="/login">
@@ -113,7 +115,7 @@ const Login = () => {
               ></Image>{" "}
               <Text mr="27%">Log in with Google</Text>
             </Button>
-            <Text color="#7c7c7c" mb="10px">
+            <Text color="#7c7c7c" mb="10px" textAlign="center">
               or
             </Text>
             <Input

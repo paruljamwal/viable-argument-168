@@ -10,11 +10,13 @@ import Register from "../../Pages/Register/Register";
 import PrivateRoute from "../PrivateRoute";
 import {Projects} from '../../Pages/usetimer/Projects'
 import {TableData} from '../../Pages/usetimer/table'
+import Clients from "../../Pages/usetimer/Clients";
+import Table from "../../Pages/usetimer/table";
+
 const MainRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Landing />}></Route>
-      <Route path="/tour" element={<Tour />}></Route>
       <Route path="/customer" element={<Customer />}></Route>
       <Route path="/price" element={<Pricingpage />} />
       <Route path="/request-a-demo" element={<Demo />}></Route>
@@ -24,12 +26,25 @@ const MainRoutes = () => {
       <Route path="/project/:id" element={<Projects/>}></Route>
       {/* <Route
         path="/#/"
+
+<Route path="/tour" element={<Tour />}></Route>
+      <Route
+        path="/#/time"
+
         element={
           <PrivateRoute>
-            <Tour />
+            <Table />
           </PrivateRoute>
         }
-      ></Route> */}
+      ></Route>
+      <Route
+        path="/#/clients"
+        element={
+          <PrivateRoute>
+            <Clients />
+          </PrivateRoute>
+        }
+      ></Route>
     </Routes>
   );
 };

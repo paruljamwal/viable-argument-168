@@ -6,9 +6,10 @@ import { useSelector } from 'react-redux';
 import TaskCard from './TaskCard'
 
 const Projects = () => {
-    // const [list ,setlist] =useState(false)
     const {id}=useParams;
     const data=useSelector(store=> store.userReducer.tasks)
+    const [list ,setlist] =useState(false)
+
     return (
         <Box>
             <Box className="App" position="relative"  >
