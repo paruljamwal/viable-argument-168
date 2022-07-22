@@ -1,11 +1,10 @@
 .rsContainer{
-    height:480px;
-width: 100%;
+height:480px;
+margin: 8px;
+width: 98%;
+justify-content: space-between;
+  padding: 100px 20px 20px 20px;
 
-     justify-content: space-between;
- 
-      margin: 8px;
-      padding: 100px 20px 20px 20px;
 }
 .subdiv{
     margin-left: 5%;
@@ -39,14 +38,14 @@ width: 100%;
     border-radius: 5px;
 }
 .page-subtitle>h3 {
-    margin-left: -110px;
+    margin-left: 7px;
     font-size: 1.125rem;
     line-height: 1.44;
     color: #767676;
 }
 
 .signup_by_email>div{
-    margin-left: -130px;
+    margin-left: 3px;
 }
 .signup_by_email>a{
   

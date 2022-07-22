@@ -27,6 +27,7 @@ import {
   Lists,
   ChangingPic,
   Load,
+  LoadingImg
 } from "../Stlyed/Topsection.styled";
 
 const TopSection = () => {
@@ -62,6 +63,7 @@ const TopSection = () => {
         <a href="https://youtu.be/k2OeJBqXccI" target="_blank" rel="noreferrer">
           {" "}
           <Image src="https://blog-cdn.everhour.com/assets/images/new-design/illustrations/primary-illustrations/home-narrow-v2.webp" />
+          <LoadingImg  src="https://i.pinimg.com/originals/71/3a/32/713a3272124cc57ba9e9fb7f59e9ab3b.gif"/>
         </a>
       </Video>
     </>
