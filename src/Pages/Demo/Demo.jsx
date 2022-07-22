@@ -6,7 +6,7 @@ const Demo = () => {
   return (
     <div>
       <Box w={{ base: "22rem", md: "30rem", lg: "45rem" }} m="auto" mt="11rem">
-        <Heading as="h1" color="#333" fontWeight="600">
+        <Heading as="h1" color="#333" fontWeight="600" textAlign="center">
           Book a 30-min live demo 🚀{" "}
         </Heading>
         <Heading
@@ -17,6 +17,7 @@ const Demo = () => {
           fontWeight="400"
           lineHeight="1.36"
           fontFamily="'geomanist-regular',sans-serif"
+          textAlign="center"
         >
           10+ users? Let one of our customer success experts show you how
           Everhour works, with plenty of time set aside for questions
