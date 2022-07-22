@@ -60,9 +60,9 @@ console.log(value)
  <>
  <div>
 
-{!togle ?  <Button colorScheme='green' w={"160px"} h="70px" borderRadius={"none"} textAlign="center" fontSize={"25px"} padding="25px"  onClick={Start} >Start Timer</Button>  :  <Stack spacing={4} direction='row' align='center'>
+{!togle ?  <Button colorScheme='green' w={"160px"} h="68px" borderRadius={"none"} textAlign="center" fontSize={"25px"} padding="25px"  onClick={Start} >Start Timer</Button>  :  <Stack spacing={4} direction='row' align='center'>
   
-  <Button colorScheme='red'  onClick={Start} w={"160px"} h="70px" borderRadius={"none"} textAlign="center" fontSize={"20px"} padding="25px">
+  <Button colorScheme='red'  onClick={Start} w={"160px"} h="68px" borderRadius={"none"} textAlign="center" fontSize={"20px"} padding="25px">
  <div style={{display:"flex",fontSize:"20px",alignItems:"center"}}><div><BsPause/></div><Box padding="5px">{Convert(value)}</Box></div>
   </Button>
 </Stack> }
