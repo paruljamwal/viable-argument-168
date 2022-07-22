@@ -1,16 +1,16 @@
 import React from "react";
-import { Heading, Box, Flex, pt, Text } from "@chakra-ui/react";
+import { Heading, Box, Text, Image } from "@chakra-ui/react";
 import Review from "../../Components/Review/Review";
-import {tourText} from "./TourReveiw.js"
+import { tourText } from "./TourReveiw.js";
 
 const Tour = () => {
-  
   return (
     <div>
-      <Flex
+      <Box
         justifyContent={"space-between"}
         padding={"50px 10px 20px 100px"}
-        // border={"10px solid green"}
+        display={{ base: "block", md: "block", lg: "flex" }}
+        mt="70px"
       >
         <Box>
           <Heading
@@ -18,7 +18,8 @@ const Tour = () => {
             pt={"50px"}
             fontWeight={"500"}
             fontSize="50px"
-            textAlign={"left"}
+            mr={{ base: "18%", md: "0%", lg: "0%" }}
+            textAlign={{ base: "center", md: "center", lg: "left" }}
           >
             Everything you need <br /> for workforce <br /> management
           </Heading>
@@ -28,18 +29,20 @@ const Tour = () => {
             fontWeight={"400"}
             fontSize="23px"
             color={"grey"}
-            textAlign={"left"}
+            mr={{ base: "15%", md: "0%", lg: "0%" }}
+            textAlign={{ base: "center", md: "center", lg: "left" }}
           >
             Everhour will make your daily job way easier <br /> and more
             organized
           </Heading>
         </Box>
-        <img
+        <Image
           src="https://blog-cdn.everhour.com/assets/images/new-design/illustrations/primary-illustrations/all-features-3.webp"
           alt=""
-          width={"650px"}
+          mt={{ base: "5%", md: "5%", lg: "0%" }}
+          w={{ base: "88%", md: "88%", lg: "650px" }}
         />
-      </Flex>
+      </Box>
 
       {/* ----------- PART 2 ----------- */}
 
@@ -71,7 +74,11 @@ const Tour = () => {
       </Box>
       <Box
         display={"Grid"}
-        gridTemplateColumns={"repeat(3, 300px)"}
+        gridTemplateColumns={{
+          base: "repeat(2, 200px)",
+          md: "repeat(2, 300px)",
+          lg: "repeat(3, 300px)",
+        }}
         gridTemplateRows={"repeat(250px , auto)"}
         height={"auto"}
         gap={"5%"}
@@ -251,7 +258,11 @@ const Tour = () => {
       </Box>
       <Box
         display={"Grid"}
-        gridTemplateColumns={"repeat(3, 300px)"}
+        gridTemplateColumns={{
+          base: "repeat(2, 200px)",
+          md: "repeat(2, 300px)",
+          lg: "repeat(3, 300px)",
+        }}
         gridTemplateRows={"repeat(250px , auto)"}
         height={"auto"}
         gap={"5%"}
@@ -414,7 +425,11 @@ const Tour = () => {
       </Box>
       <Box
         display={"Grid"}
-        gridTemplateColumns={"repeat(3, 300px)"}
+        gridTemplateColumns={{
+          base: "repeat(2, 200px)",
+          md: "repeat(2, 300px)",
+          lg: "repeat(3, 300px)",
+        }}
         gridTemplateRows={"repeat(250px , auto)"}
         height={"auto"}
         gap={"5%"}
@@ -530,7 +545,11 @@ const Tour = () => {
       </Box>
       <Box
         display={"Grid"}
-        gridTemplateColumns={"repeat(3, 300px)"}
+        gridTemplateColumns={{
+          base: "repeat(2, 200px)",
+          md: "repeat(2, 300px)",
+          lg: "repeat(3, 300px)",
+        }}
         gridTemplateRows={"repeat(250px , auto)"}
         height={"auto"}
         gap={"5%"}
@@ -647,7 +666,11 @@ const Tour = () => {
       </Box>
       <Box
         display={"Grid"}
-        gridTemplateColumns={"repeat(3, 300px)"}
+        gridTemplateColumns={{
+          base: "repeat(2, 200px)",
+          md: "repeat(2, 300px)",
+          lg: "repeat(3, 300px)",
+        }}
         gridTemplateRows={"repeat(250px , auto)"}
         height={"auto"}
         gap={"5%"}
@@ -803,7 +826,11 @@ const Tour = () => {
       </Box>
       <Box
         display={"Grid"}
-        gridTemplateColumns={"repeat(3, 300px)"}
+        gridTemplateColumns={{
+          base: "repeat(2, 200px)",
+          md: "repeat(2, 300px)",
+          lg: "repeat(3, 300px)",
+        }}
         gridTemplateRows={"repeat(250px , auto)"}
         height={"auto"}
         gap={"5%"}
@@ -880,7 +907,11 @@ const Tour = () => {
       </Box>
       <Box
         display={"Grid"}
-        gridTemplateColumns={"repeat(3, 300px)"}
+        gridTemplateColumns={{
+          base: "repeat(2, 200px)",
+          md: "repeat(2, 300px)",
+          lg: "repeat(3, 300px)",
+        }}
         gridTemplateRows={"repeat(250px , auto)"}
         height={"auto"}
         gap={"5%"}
@@ -996,8 +1027,12 @@ const Tour = () => {
       </Box>
       <Box
         display={"Grid"}
-        gridTemplateColumns={"repeat(3, 300px)"}
-        // gridTemplateRows={"repeat( auto)"}
+        gridTemplateColumns={{
+          base: "repeat(2, 200px)",
+          md: "repeat(2, 300px)",
+          lg: "repeat(3, 300px)",
+        }}
+        b
         height={"auto"}
         gap={"5%"}
         padding={"30px 20px"}
@@ -1133,7 +1168,7 @@ const Tour = () => {
         You are in a good company
       </Heading>
       <Heading
-        width={"800px"}
+        width={{ base: "300px", md: "500px", lg: "800px" }}
         size="sm"
         pt={"8px"}
         fontWeight={"400"}
