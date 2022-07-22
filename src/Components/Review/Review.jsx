@@ -5,7 +5,11 @@ const Review = ({ tourText }) => {
   console.log(tourText);
   return (
     <Grid
-      templateColumns="repeat(3, 1fr)"
+      gridTemplateColumns={{
+        base: "repeat(2, 1fr)",
+        md: "repeat(2, 1fr)",
+        lg: "repeat(3, 1fr)",
+      }}
       templateRows={"auto"}
       gap={10}
       width={"85%"}

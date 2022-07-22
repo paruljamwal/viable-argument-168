@@ -1,7 +1,13 @@
 import React, { useState } from "react";
-import {  ButtonBox, Carousel, Left, Right, Slide } from "../Stlyed/Carousal.styled";
+import {
+  ButtonBox,
+  Carousel,
+  Left,
+  Right,
+  Slide,
+} from "../Stlyed/Carousal.styled";
 import SlideImages from "./Images";
-import {ChevronLeftIcon,ChevronRightIcon} from '@chakra-ui/icons'
+import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 
 const Stepper = () => {
   let SliderArray = [
@@ -49,42 +55,33 @@ const Stepper = () => {
   };
 
   return (
-    
-     <ButtonBox >
-      
-   
-     <span>
-      <Left onClick={Goleft}>
-       <ChevronLeftIcon w={6} h={6}/>
-      </Left>
+    <div>
+      <ButtonBox>
+        <span>
+          <Left onClick={Goleft}>
+            <ChevronLeftIcon w={6} h={6} />
+          </Left>
+        </span>
 
-     </span>
-   
-   <span>
-    <Carousel>
-      {SliderArray.map((e, i) => (
-        <Slide key={i} style={{ transform: `translate(${x}%)` }}>
-        {e}
-        </Slide>
-        ))}
-        
-      </Carousel>
-
-      </span>
-     <span>
-
-      <Right onClick={GoRight}>
-       <ChevronRightIcon w={6} h={6}/>
-      </Right>
-     </span>
-
-   
-  
-
-  
-       </ButtonBox>
-
- 
+        <span>
+          <Carousel>
+            {SliderArray.map((e, i) => (
+              <Slide
+                key={i}
+                style={{ transform: `translate(${x}%)`, marginTop: "-10%" }}
+              >
+                {e}
+              </Slide>
+            ))}
+          </Carousel>
+        </span>
+        <span>
+          <Right onClick={GoRight}>
+            <ChevronRightIcon w={6} h={6} />
+          </Right>
+        </span>
+      </ButtonBox>
+    </div>
   );
 };
 
