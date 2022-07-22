@@ -8,6 +8,10 @@ function App() {
   return (
     <div className="App">
       <DetailForm />
+       <Header /> 
+      <MainRoutes />
+      {/* <Footer /> */}
+
     </div>
   );
 }

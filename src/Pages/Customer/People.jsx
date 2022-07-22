@@ -92,14 +92,14 @@ const People = () => {
       ))
     }
     <p className='p'>A time tracker you can trust for life</p>
-    <div className='all'>
+    {/* <div className='all'>
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQagPOS-UCBF3qRiMuB1Aer778LJqqfV64-1D_izwu7FBlvd-ao" alt="" />
       
       <img src="https://nextcloud.com/wp-content/uploads/2022/03/Gartner-1536x460.png" alt="" />   
        
       <img src="https://www.signable.co.uk/wp-content/uploads/awards-banner.webp" alt="" />
       
-   </div>
+   </div> */}
     </>
   )
 }
