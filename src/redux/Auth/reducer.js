@@ -5,8 +5,6 @@ const initState = {
   isError: false,
   isAuth: getLocalData("token") ? true : false,
   token: getLocalData() || "",
-  isRegister: getLocalData("registertoken") ? true : false,
-  registertoken: getLocalData() || "",
 };
 
 export const reducer = (state = initState, action) => {
@@ -29,27 +27,6 @@ export const reducer = (state = initState, action) => {
         token: payload,
       };
     case types.LOGIN_FAILURE:
-      return {
-        ...state,
-        isLoading: false,
-        isError: true,
-      };
-    case types.REGISTER_REQUEST:
-      return {
-        ...state,
-        isLoading: true,
-        isError: false,
-      };
-    case types.REGISTER_SUCCESS:
-      saveLocalData("registertoken", payload);
-      return {
-        ...state,
-        isLoading: false,
-        isError: false,
-        isRegister: true,
-        registertoken: payload,
-      };
-    case types.REGISTER_FAILURE:
       return {
         ...state,
         isLoading: false,

@@ -7,13 +7,12 @@ import Landing from "../../Pages/Landing/Landing";
 import Customer from "../../Pages/Customer/Customer";
 import Login from "../../Pages/Login/Login";
 import Register from "../../Pages/Register/Register";
-import PrivateRoute from "../PrivateRoute";
 import Projects from "../../Pages/usetimer/Projects";
 import TableData from "../../Pages/usetimer/table";
 import DetailForm from "../../Home/DetailForm";
+import Clients from "../../Pages/usetimer/Clients";
 
 const MainRoutes = () => {
-
   return (
     <Routes>
       <Route path="/" element={<Landing />}></Route>
@@ -23,28 +22,10 @@ const MainRoutes = () => {
       <Route path="/request-a-demo" element={<Demo />}></Route>
       <Route path="/signup" element={<Register />}></Route>
       <Route path="/login" element={<Login />}></Route>
-       <Route path="/project/:id" element={<Projects/>} />
-       <Route path="/home" element={
-       <PrivateRoute>
-       <DetailForm/>
-      </PrivateRoute>   
-       } />
-
-      <Route
-        path="/time"  element={
-          <PrivateRoute>
-            <TableData />
-          </PrivateRoute>
-        }
-      ></Route>
-      <Route
-        path="/clients"
-        element={
-          <PrivateRoute>
-            <Clients />
-          </PrivateRoute>
-        }
-      ></Route>
+      <Route path="/project/:id" element={<Projects />} />
+      <Route path="/home" element={<DetailForm />} />
+      <Route path="/table" element={<TableData />}></Route>
+      <Route path="/clients" element={<Clients />}></Route>
     </Routes>
   );
 };

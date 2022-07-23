@@ -74,7 +74,7 @@ export default function Header() {
               src={logo}
               alt="lg"
               marginLeft="50px"
-              marginRight={{ md: "25px", lg: "-4px" }}
+              marginRight={{ md: "25px", lg: "4px" }}
               width="30px"
             />
           </RoutingLink>

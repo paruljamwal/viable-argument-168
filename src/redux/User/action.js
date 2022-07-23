@@ -25,9 +25,8 @@ export const AddUserFail=()=>{
 
 
 export const AddUser=(payload)=>(dispatch)=>{
-    console.log(payload,"p")
     dispatch(AddUserReq())
-    axios.post(`http://localhost:8080/UserData`,payload)
+    axios.post(`https://everhour.herokuapp.com/userData`,payload)
         .then((res)=>dispatch(AddUserSucc(res.data)))
         .catch(()=>dispatch(AddUserFail()))
     }
@@ -37,7 +36,7 @@ export const AddUser=(payload)=>(dispatch)=>{
 
 const getTasks=(payload)=>(dispatch)=>{
     dispatch({type: GET_TASK_REQ })
-    return axios.get(`http://localhost:8080/UserData`)
+    return axios.get(`https://everhour.herokuapp.com/userData`)
     .then((r)=>dispatch({type:GET_TASK_SUCC,payload:r.data}))
     .catch((e)=>dispatch({type:GET_TASK_FAIL,payload:e}))
 
@@ -46,7 +45,7 @@ const getTasks=(payload)=>(dispatch)=>{
 const updateTASKS=(id,payload)=>(dispatch)=>{
     console.log(dispatch)
     dispatch({type:UPDATE_TASKS_REQ})
-    return axios.patch(`http://localhost:8080/UserData/${id}`,
+    return axios.patch(`https://everhour.herokuapp.com/userData/${id}`,
     payload).then((r)=>{
         dispatch({type:UPDATE_TASKS_SUCC,payload:r.data})
     })
@@ -59,7 +58,7 @@ const updateTASKS=(id,payload)=>(dispatch)=>{
 const AddSubTasks=(id,payload)=>(dispatch)=>{
     console.log(payload);
    dispatch({type:ADD_SUBTASKS_REQ});
- return  axios.patch(`http://localhost:8080/UserData/${id}`,payload)
+ return  axios.patch(`https://everhour.herokuapp.com/userData/${id}`,payload)
    .then((r)=>dispatch({type:ADD_SUBTASKS_SUCC,payload:r.data}))
    .then((e)=>dispatch({type:ADD_SUBTASKS_FAIL,payload:e}))
 }
@@ -67,11 +66,11 @@ const AddSubTasks=(id,payload)=>(dispatch)=>{
 
 //dELETE SubTask.......
 
-const DeleteData=(id,payload)=>(dispatch)=>{
+const DeleteData=(id)=>(dispatch)=>{
     dispatch({type:DELETE_SUBTASK_REQ})
-   return axios.patch(`http://localhost:8080/UserData/${id}`,payload)
-    .then((r)=>dispatch({type:DELETE_SUBTASK_SUCC,payload:r}))
-    .catch((e)=>dispatch({type:DELETE_SUBTASK_FAIL,payload:e}))
+   return axios.delete(`https://everhour.herokuapp.com/userData/${id}`)
+    .then((r)=>dispatch({type:DELETE_SUBTASK_SUCC,r}))
+    .catch((e)=>dispatch({type:DELETE_SUBTASK_FAIL,e}))
 }
 
 export {getTasks,updateTASKS,AddSubTasks,DeleteData}
