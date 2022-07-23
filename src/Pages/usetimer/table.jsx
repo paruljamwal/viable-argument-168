@@ -10,7 +10,7 @@ import { useState } from "react";
 import Timer from "./Timer";
 
 
-function Table() {
+function TableData() {
   const [list, setlist] = useState(false)
   const [add, setadd] = useState("")
   const [todo, settodo] = useState([])
@@ -46,10 +46,7 @@ function Table() {
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4} h="auto">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat.
+                 
                 </AccordionPanel>
               </AccordionItem>
 
@@ -68,4 +65,4 @@ function Table() {
   );
 }
 
-export default Table;
+export default TableData;
