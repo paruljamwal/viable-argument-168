@@ -37,6 +37,7 @@ const DetailForm = () => {
     e.preventDefault()
     let data={userName:userName,subtask:subtask,project:project,email:email,status:status,tasks:tasks,mobile:mobile,description:description,tag:tag}
     dispatch(AddUser(data))
+    navigate("/table");
   }
 
   
@@ -88,7 +89,7 @@ const DetailForm = () => {
         />
 
 
-<FormControl>Mobile</FormControl>
+        <FormControl>Mobile</FormControl>
         <Input
           type="number"
           placeholder="Enter your Task"
