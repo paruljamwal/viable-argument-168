@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Login.module.css";
+import { GoogleLogin } from 'react-google-login';
 import {
   Box,
   Button,
@@ -13,8 +14,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { CheckLogin } from "../../redux/Auth/action";
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("eve.holt@reqres.in");
+  const [password, setPassword] = useState("cityslicka");
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
@@ -23,6 +24,15 @@ const Login = () => {
 
   const isError = useSelector((store) => store.AuthReducer.isLoading);
   const [checkErrors, setcheckError] = useState(false);
+
+  const responseGoogle=(response)=>{
+   console.log(response.tokenId);
+
+   if(response.tokenId){
+    navigate('/home')
+   }
+  }
+console.log(comeFrom)
   const HandleLoginAuth = () => {
     setcheckError(true);
     const userinput = {
@@ -98,7 +108,20 @@ const Login = () => {
             pb={{ base: "20px", md: "0px", lg: "0px" }}
             borderBottom={{ base: "1px solid grey", md: "none", lg: "md" }}
           >
-            <Button
+
+            {/* // */}
+            
+            <GoogleLogin
+    clientId="666901233818-q9j1vvgbec1v36obe9fq07fct2lnipn2.apps.googleusercontent.com"
+    buttonText="Login"
+    onSuccess={responseGoogle}
+    onFailure={responseGoogle}
+    cookiePolicy={'single_host_origin'}
+  >
+<Button><Text mr="27%">Log in with Google</Text></Button>
+</GoogleLogin>
+
+            {/* <Button
               bg="transparent"
               border={"1px solid #7c7c7c "}
               color="#7c7c7c"
@@ -117,7 +140,11 @@ const Login = () => {
                 borderRadius={"50%"}
               ></Image>{" "}
               <Text mr="27%">Log in with Google</Text>
-            </Button>
+            </Button> */}
+
+
+
+
             <Text color="#7c7c7c" mb="10px" textAlign="center">
               or
             </Text>

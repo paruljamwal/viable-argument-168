@@ -1,0 +1,67 @@
+
+
+.box{
+    border: 1px transparent solid;
+    width: 100%;
+    margin:5% auto;
+    display: flex;
+
+}
+
+.Todobox{
+    border: 1px transparent solid;
+    width: 30%;
+    margin:2% auto;
+    text-align: center;
+    font-weight: 500;
+
+   
+
+}
+
+.progressbox{
+    border: 1px transparent solid;
+    width: 30%;
+    margin:2% auto;
+
+
+
+}
+
+
+.donebox{
+    border: 1px transparent solid;
+    width: 30%;
+    margin:2% auto;
+    height: 400px;
+
+}
+
+
+.done{
+    border: 1px solid transparent;
+    width: 80%;
+    border-radius: 10px;
+    margin: 1% auto;
+    height: 200px;
+    background-color: rgb(231, 252, 231);
+}
+
+
+.progress{
+    border: 1px solid transparent;
+    margin: 1% auto;
+    width: 80%;
+    border-radius: 10px;
+    height: 200px;
+    background-color: rgb(200, 255, 252);
+}
+
+.todo{
+    border: 1px solid transparent;
+    margin: 1% auto;
+    width: 80%;
+    border-radius: 10px;
+    height: 200px;
+    background-color: rgb(246, 203, 245) ;
+}
