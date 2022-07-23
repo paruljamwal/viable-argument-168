@@ -8,8 +8,11 @@ import Customer from "../../Pages/Customer/Customer";
 import Login from "../../Pages/Login/Login";
 import Register from "../../Pages/Register/Register";
 import PrivateRoute from "../PrivateRoute";
+import {Projects} from '../../Pages/usetimer/Projects'
+import {TableData} from '../../Pages/usetimer/table'
 import Clients from "../../Pages/usetimer/Clients";
 import Table from "../../Pages/usetimer/table";
+
 const MainRoutes = () => {
   return (
     <Routes>
@@ -19,9 +22,16 @@ const MainRoutes = () => {
       <Route path="/request-a-demo" element={<Demo />}></Route>
       <Route path="/signup" element={<Register />}></Route>
       <Route path="/login" element={<Login />}></Route>
+
       <Route path="/tour" element={<Tour />}></Route>
+      
+
+      <Route path="/table" element={<TableData/>}></Route>
+      <Route path="/project/:id" element={<Projects/>}></Route>
+      
       <Route
         path="/time"
+
         element={
           <PrivateRoute>
             <Table />
