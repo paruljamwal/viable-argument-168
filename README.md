@@ -6,12 +6,13 @@
 
 </hr>
 
+
 <h1>Some visuals of our project </h1>
  </hr>
  <p>Landing page: </p>
  <img src="https://user-images.githubusercontent.com/97459016/180615235-c1c7e4ba-0a3e-4800-9368-b6c15d442752.jpeg"/>
   <p>Customers page: </p>
-<img src="" />
+<img src="images.githubusercontent.com/96183163/180624173-e2597428-0c2c-463c-82c4-5b0306dda060.jpeg)](https://user-images.githubusercontent.com/96183163/180624173-e2597428-0c2c-463c-82c4-5b0306dda060.jpeg" />
   <p>Pricing page: </p>
 <img src="" />
   <p>Demo page: </p>
