@@ -19,9 +19,9 @@ const MainRoutes = () => {
       <Route path="/request-a-demo" element={<Demo />}></Route>
       <Route path="/signup" element={<Register />}></Route>
       <Route path="/login" element={<Login />}></Route>
-<Route path="/tour" element={<Tour />}></Route>
+      <Route path="/tour" element={<Tour />}></Route>
       <Route
-        path="/#/time"
+        path="/time"
         element={
           <PrivateRoute>
             <Table />
@@ -29,7 +29,7 @@ const MainRoutes = () => {
         }
       ></Route>
       <Route
-        path="/#/clients"
+        path="/clients"
         element={
           <PrivateRoute>
             <Clients />

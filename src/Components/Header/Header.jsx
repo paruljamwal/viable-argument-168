@@ -137,9 +137,9 @@ const DesktopNav = () => {
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
-              <Link
+              <RoutingLink
                 p={2}
-                href={navItem.href ?? "#"}
+                to={navItem.path ?? "#"}
                 fontSize={"lg"}
                 fontWeight={450}
                 color={linkColor}
@@ -149,7 +149,7 @@ const DesktopNav = () => {
                 }}
               >
                 {navItem.label}
-              </Link>
+              </RoutingLink>
             </PopoverTrigger>
 
             {navItem.children && (
@@ -226,17 +226,18 @@ const MobileNav = () => {
   );
 };
 
-const MobileNavItem = ({ label, children, href }) => {
+const MobileNavItem = ({ label, children, path }) => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
     <Stack spacing={4} onClick={children && onToggle}>
-      <Flex
+      <RoutingLink
+        display="flex"
         py={2}
         as={Link}
-        href={href ?? "#"}
+        to={path ?? "#"}
         justify={"space-between"}
-        align={"center"}
+        align={"left"}
         _hover={{
           textDecoration: "none",
         }}
@@ -244,6 +245,7 @@ const MobileNavItem = ({ label, children, href }) => {
         <Text
           fontWeight={600}
           color={useColorModeValue("gray.600", "gray.200")}
+          borderBottom="1px solid lightgrey"
         >
           {label}
         </Text>
@@ -256,7 +258,7 @@ const MobileNavItem = ({ label, children, href }) => {
             h={6}
           />
         )}
-      </Flex>
+      </RoutingLink>
 
       <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
         <Stack
@@ -282,9 +284,11 @@ const MobileNavItem = ({ label, children, href }) => {
 const NAV_ITEMS = [
   {
     label: "Everhour",
+    path: "/",
   },
   {
     label: "Tour",
+    path: "/tour",
   },
   {
     label: "Integrations",
@@ -302,15 +306,15 @@ const NAV_ITEMS = [
     ],
   },
   {
-    label: "Coustomers",
-    href: "#",
+    label: "Customers",
+    path: "/customer",
   },
   {
     label: "Pricing",
-    href: "#",
+    path: "/price",
   },
   {
     label: "Demo",
-    href: "#",
+    path: "request-a-demo",
   },
 ];

@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Button, Heading, Image, Input, Text } from "@chakra-ui/react";
 import styles from "../Login/Login.module.css";
 import { arrayUi } from "./uidata";
 import Review from "../../Components/Review/Review";
+import { useDispatch } from "react-redux";
+import { CheckRegister } from "../../redux/Auth/action";
+import { useNavigate } from "react-router-dom";
+
 const Register = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const HandleRegister = () => {
+    const userinput = {
+      email: email,
+      password: "pistol",
+    };
+
+    dispatch(CheckRegister(userinput)).then((r) => {
+      if (r.type === "REGISTER_SUCCESS") {
+        navigate("/login");
+      }
+    });
+  };
   return (
     <div>
       <Box w={{ base: "90%", md: "60%", lg: "60%" }} m="auto" mt="9rem">
@@ -69,8 +88,16 @@ const Register = () => {
           <Text color="#7c7c7c" mb="10px" textAlign={"center"}>
             or
           </Text>
-          <Input placeholder="Work email..." w="100%" h="50px" mb="30px" />
-          <button className={styles.login_btn}>Get started</button>
+          <Input
+            placeholder="Work email..."
+            w="100%"
+            h="50px"
+            mb="30px"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <button onClick={HandleRegister} className={styles.login_btn}>
+            Get started
+          </button>
           <Box display={"flex"} justifyContent="space-between" w="98%" m="auto">
             <Text color="#7c7c7c" fontSize={"0.7rem"}>
               Free to try
