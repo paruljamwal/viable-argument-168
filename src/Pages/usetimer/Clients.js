@@ -10,9 +10,7 @@ const Clients = () => {
                     <Box  height={"70px"}>
                     <Box float={"left"}  >
                          <Box colorScheme='green' w={"auto"} h="70px" borderRadius={"none"} textAlign="center" fontSize={"35px"} padding="25px"  >Clients</Box></Box>
-                        
-                        
-                          <Box float={"right"}  >
+                         <Box float={"right"}>
                          <Button colorScheme='green' w={"auto"} h="70px" borderRadius={"none"} textAlign="center" fontSize={"25px"} padding="25px"  onClick={()=>{}} >Create Projects</Button></Box></Box>
 
                 </Stack >
@@ -23,8 +21,7 @@ const Clients = () => {
 <Box  display="flex" >
 <Select placeholder='Select option' w="150px" >
   <option value='option1'>None</option>
-  <option value='option2'>
-Client</option>
+  <option value='option2'>Client</option>
   <option value='option3'>Billing</option>
   <option value='option3'>Budget</option>
 </Select>
@@ -40,7 +37,7 @@ Client</option>
 <Input  w="250px" placeholder='search projects'/>
 </Box>
                     
-                    </Flex>
+                   </Flex>
                 </Stack>
             </Box>
             </Box>

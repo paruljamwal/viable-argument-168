@@ -1,14 +1,11 @@
-import React,{useEffect, useState} from 'react'
-
-
-import {BsPause} from "react-icons/bs"
-import { Button, Stack,Box} from '@chakra-ui/react'
+import React,{useEffect, useState} from 'react';
+import {BsPause} from "react-icons/bs";
+import { Button, Stack,Box} from '@chakra-ui/react';
 const Timer = () => {
-  const [togle,settogle]=useState(false)
+  const [togle,settogle]=useState(false);
   const [isstarted,SetStarted]=useState(false);
   const[value,Setvalue]=useState(0);
   const[stop,Setistopped]=useState(false);
-
 
 
 const Start=()=>{
