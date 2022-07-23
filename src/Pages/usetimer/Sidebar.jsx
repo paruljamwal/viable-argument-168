@@ -9,6 +9,9 @@ import {
   Text,
   useDisclosure,
   BoxProps,
+  IconButton,
+  Box,
+  CloseButton,
   FlexProps,
 } from "@chakra-ui/react";
 import {
@@ -21,7 +24,7 @@ import {
 } from "react-icons/fi";
 import { IconType } from "react-icons";
 import { ReactText } from "react";
-import everlogo from "./Image/EverhourLogo.svg";
+// import everlogo from "./Image/EverhourLogo.svg";
 
 interface LinkItemProps {
   name: string;
@@ -82,8 +85,8 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       h="full"
       {...rest}
     >
-      <Flex h="20" alignItems="center" mx="8">
-        <img src={everlogo} width={"35px"} />
+      <Box h="20" alignItems="center" mx="8">
+        {/* <img src={everlogo} width={"35px"} /> */}
         <Text
           fontSize="2xl"
           fontFamily="monospace"
@@ -92,7 +95,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
           Everhour
         </Text>
         <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
-      </Flex>
+      </Box>
       {LinkItems.map((link) => (
         <NavItem key={link.name} icon={link.icon}>
           {link.name}

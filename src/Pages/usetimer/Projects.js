@@ -14,12 +14,15 @@ import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import "./project.css";
 import { DeleteData, getTasks } from "../../redux/User/action";
+import { useNavigate } from "react-router-dom";
 
 const Projects = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
+  const navigate=useNavigate()
   // console.log(id,"i");
   const data = useSelector((store) => store.userReducer.tasks);
+  const isAuth = useSelector((store) => store.AuthReducer.isAuth);
   let newData = data.filter((e) => e._id === id);
   //  console.log(newData,"ndata")
 
@@ -28,6 +31,10 @@ const Projects = () => {
     dispatch(DeleteData(i)).then(() => dispatch(getTasks()));
   };
 
+  const BackTo=()=>{
+    navigate("/")
+  }
+
   useEffect(() => {
     if (newData.length == 0) {
       dispatch(getTasks());
@@ -35,7 +42,7 @@ const Projects = () => {
   }, [id, data]);
 
   return (
-    <DragDropContext>
+   
       <Box>
         <Box className="App" position="relative">
           <Stack
@@ -191,9 +198,17 @@ const Projects = () => {
               </div>
             </div>
           </Stack>
+          <Button  colorScheme="green"
+                  w={"auto"}
+                  h="35px"
+                  borderRadius={"none"}
+                  textAlign="center"
+                  fontSize={"18px"}
+                  m={"5"}
+                  padding="25px" onClick={BackTo} >Back to Home</Button>
         </Box>
       </Box>
-    </DragDropContext>
+
   );
 };
 

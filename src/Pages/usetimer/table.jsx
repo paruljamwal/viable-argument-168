@@ -23,6 +23,7 @@ import { useSelector, useDispatch } from "react-redux";
 import Timer from "./Timer";
 import { getTasks } from "../../redux/User/action";
 import { useNavigate } from "react-router-dom";
+import Sidebar from "./Sidebar";
 
 function TableData() {
   const data = useSelector((store) => store.userReducer.tasks);
@@ -47,8 +48,9 @@ function TableData() {
 
 
   return (
-    <>
-      <Box className="App" position="relative">
+    <Box display={"flex"} width={"100%"} border={"2px solid transparent"}  >
+    <Sidebar/>
+      <Box className="App" >
         <Stack
           display={"flex"}
           position="absolute"
@@ -150,7 +152,7 @@ function TableData() {
           </Stack>
         </Stack>
       </Box>
-    </>
+    </Box>
   );
 }
 
