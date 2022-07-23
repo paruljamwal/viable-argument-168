@@ -10,7 +10,13 @@ import {
   useDisclosure,
   BoxProps,
   FlexProps,
+  Box,
+  CloseButton,
+  IconButton,
+ 
+
 } from "@chakra-ui/react";
+
 import {
   FiHome,
   FiTrendingUp,
@@ -18,26 +24,29 @@ import {
   FiStar,
   FiSettings,
   FiMenu,
-} from "react-icons/fi";
+} 
+from "react-icons/fi";
+
 import { IconType } from "react-icons";
 import { ReactText } from "react";
-import everlogo from "./Image/EverhourLogo.svg";
+import everlogo from "./../Image/EverhourLogo.svg"
+import { LinkIcon } from "@chakra-ui/icons";
 
-interface LinkItemProps {
-  name: string;
-  icon: IconType;
-}
-const LinkItems: Array<LinkItemProps> = [
-  { name: "Home", icon: FiHome },
-  { name: "Time", icon: FiTrendingUp },
-  { name: "Projects", icon: FiCompass },
-  { name: "Clients", icon: FiStar },
-  { name: "Team", icon: FiStar },
-  { name: "Reports", icon: FiStar },
-  { name: "Settings", icon: FiSettings },
-];
-
-export default function Sidebar({ children }: { children: ReactNode }) {
+// interface LinkItemProps {
+//   name: string;
+//   icon: IconType;
+// }
+// const LinkItems: Array<LinkItemProps> = [
+//   { name: "Home", icon: FiHome },
+//   { name: "Time", icon: FiTrendingUp },
+//   { name: "Projects", icon: FiCompass },
+//   { name: "Clients", icon: FiStar },
+//   { name: "Team", icon: FiStar },
+//   { name: "Reports", icon: FiStar },
+//   { name: "Settings", icon: FiSettings },
+// ];
+// : { children: ReactNode }
+export default function Sidebar({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <Box minH="100vh" bg={useColorModeValue("gray.100", "gray.900")}>
@@ -67,11 +76,12 @@ export default function Sidebar({ children }: { children: ReactNode }) {
   );
 }
 
-interface SidebarProps extends BoxProps {
-  onClose: () => void;
-}
+// interface SidebarProps extends BoxProps {
+//   onClose: () => void;
+// }
+// : SidebarProps
 
-const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
+const SidebarContent = ({ onClose, ...rest }) => {
   return (
     <Box
       bg={useColorModeValue("white", "gray.900")}
@@ -93,20 +103,21 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
         </Text>
         <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       </Flex>
-      {LinkItems.map((link) => (
+      {/* {LinkItems.map((link) => (
         <NavItem key={link.name} icon={link.icon}>
           {link.name}
         </NavItem>
-      ))}
+      ))} */}
     </Box>
   );
 };
 
-interface NavItemProps extends FlexProps {
-  icon: IconType;
-  children: ReactText;
-}
-const NavItem = ({ icon, children, ...rest }: NavItemProps) => {
+// interface NavItemProps extends FlexProps {
+//   icon: IconType;
+//   children: ReactText;
+// }
+// : NavItemProps
+const NavItem = ({ icon, children, ...rest }) => {
   return (
     <Link
       href="#"
@@ -142,10 +153,11 @@ const NavItem = ({ icon, children, ...rest }: NavItemProps) => {
   );
 };
 
-interface MobileProps extends FlexProps {
-  onOpen: () => void;
-}
-const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
+// interface MobileProps extends FlexProps {
+//   onOpen: () => void;
+// }
+// : MobileProps
+const MobileNav = ({ onOpen, ...rest }) => {
   return (
     <Flex
       ml={{ base: 0, md: 60 }}
