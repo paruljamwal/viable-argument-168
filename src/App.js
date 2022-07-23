@@ -9,6 +9,7 @@ function App() {
       <Header />
       <MainRoutes />
       <Footer />
+
     </div>
   );
 }
