@@ -85,7 +85,7 @@ const Tour = () => {
         padding={"30px 20px"}
         justifyContent={"space-around"}
       >
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             ⭐ Seemless integrations
           </Heading>
@@ -95,11 +95,9 @@ const Tour = () => {
             Basecamp, Jira, Trello, GitHub, ClickUp and more.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
 
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             ⌚ Timer or manual entry
           </Heading>
@@ -109,10 +107,8 @@ const Tour = () => {
             hours manually afterwards.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             📻 Clock-in, clock-out
           </Heading>
@@ -122,10 +118,8 @@ const Tour = () => {
             You can calculate the timming of indivisual project.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             ⌛ Estimates
           </Heading>
@@ -135,10 +129,8 @@ const Tour = () => {
             what is left.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             🔔 Reminders
           </Heading>
@@ -148,10 +140,8 @@ const Tour = () => {
             track time.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             ☔ Time off
           </Heading>
@@ -160,10 +150,8 @@ const Tour = () => {
             Track paid time off, vacations, sick days and leave types.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             🎰 Auto-stop timer
           </Heading>
@@ -173,10 +161,8 @@ const Tour = () => {
             selecet day or with date.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             ⏲️ Time log
           </Heading>
@@ -186,10 +172,8 @@ const Tour = () => {
             available for revision.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             🌟 Automate with Zapier
           </Heading>
@@ -199,10 +183,8 @@ const Tour = () => {
             apps with no technical knowledge.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             📨 Browser extension
           </Heading>
@@ -211,10 +193,8 @@ const Tour = () => {
             Track time right from your browser’s toolbar with a single click.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             📱 iPhone app
           </Heading>
@@ -222,8 +202,6 @@ const Tour = () => {
           <Text fontSize="md">
             Record time spent on projects and tasks from your iPhone.
           </Text>
-          <br />
-          <hr />
           <br />
         </Box>
       </Box>
@@ -269,7 +247,7 @@ const Tour = () => {
         padding={"30px 20px"}
         justifyContent={"space-around"}
       >
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             📂 Manage clients
           </Heading>
@@ -279,11 +257,9 @@ const Tour = () => {
             time.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
 
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             💲 Flexible billing
           </Heading>
@@ -293,11 +269,9 @@ const Tour = () => {
             materials or fixed fee.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
 
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             〽️ Budgets
           </Heading>
@@ -307,11 +281,9 @@ const Tour = () => {
             finances catch you by surprise.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
 
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             🕶️ Alerts
           </Heading>
@@ -321,11 +293,9 @@ const Tour = () => {
             project budget.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
 
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             💸 Labor costs
           </Heading>
@@ -335,11 +305,9 @@ const Tour = () => {
             you charge for their work.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
 
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             💰 Non-billable time
           </Heading>
@@ -348,11 +316,9 @@ const Tour = () => {
             Exclude certain tasks from the billable amount calculation.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
 
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             ➖ Disallow overbudget
           </Heading>
@@ -362,11 +328,9 @@ const Tour = () => {
             the budget is exceeded.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
 
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             💲✏️ Custom task rates
           </Heading>
@@ -376,11 +340,9 @@ const Tour = () => {
             rate to each task.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
 
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             〽️ Budgets
           </Heading>
@@ -389,8 +351,6 @@ const Tour = () => {
             Decide if members can see a project’s budget, which is visible to
             admins only by default.
           </Text>
-          <br />
-          <hr />
           <br />
         </Box>
       </Box>
@@ -436,7 +396,7 @@ const Tour = () => {
         padding={"30px 20px"}
         justifyContent={"space-around"}
       >
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             📂 Manage tasks
           </Heading>
@@ -446,10 +406,8 @@ const Tour = () => {
             the team.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Use sections and tags
           </Heading>
@@ -458,10 +416,8 @@ const Tour = () => {
             Use tags and sections to organize, and add context, to your tasks.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             List or Board views
           </Heading>
@@ -471,10 +427,8 @@ const Tour = () => {
             have you covered.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Copy templates
           </Heading>
@@ -484,10 +438,8 @@ const Tour = () => {
             in minutes.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Estimates
           </Heading>
@@ -497,10 +449,8 @@ const Tour = () => {
             what is left.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Archive
           </Heading>
@@ -509,8 +459,6 @@ const Tour = () => {
             Archive projects that you no longer need. We keep all time and data
             preserved.
           </Text>
-          <br />
-          <hr />
           <br />
         </Box>
       </Box>
@@ -556,7 +504,7 @@ const Tour = () => {
         padding={"30px 20px"}
         justifyContent={"space-around"}
       >
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Visualize
           </Heading>
@@ -566,10 +514,8 @@ const Tour = () => {
             portfolio on one page.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Plan vs reported
           </Heading>
@@ -579,10 +525,8 @@ const Tour = () => {
             member.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Resource availability
           </Heading>
@@ -592,10 +536,8 @@ const Tour = () => {
             a new project.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Absence
           </Heading>
@@ -604,8 +546,6 @@ const Tour = () => {
             Add your team’s leave or holidays to the schedule to keep records
             and avoid conflicts.
           </Text>
-          <br />
-          <hr />
           <br />
         </Box>
         <Box>
@@ -618,8 +558,6 @@ const Tour = () => {
             members and assignments.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
         <Box>
           <Heading size="lg" fontSize="20px">
@@ -630,8 +568,6 @@ const Tour = () => {
             Configure weekly capacity and see who’s overbooked and who can take
             on more.
           </Text>
-          <br />
-          <hr />
           <br />
         </Box>
       </Box>
@@ -677,7 +613,7 @@ const Tour = () => {
         padding={"30px 20px"}
         justifyContent={"space-around"}
       >
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Summary charts
           </Heading>
@@ -687,10 +623,8 @@ const Tour = () => {
             performing.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Time approval
           </Heading>
@@ -700,10 +634,8 @@ const Tour = () => {
             further editing.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Lock time editing
           </Heading>
@@ -713,10 +645,8 @@ const Tour = () => {
             period.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Correct employee time
           </Heading>
@@ -726,10 +656,8 @@ const Tour = () => {
             was a mistake.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Time log
           </Heading>
@@ -739,10 +667,8 @@ const Tour = () => {
             available for revision.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Roles and permissions
           </Heading>
@@ -752,10 +678,8 @@ const Tour = () => {
             data.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Deactivating users
           </Heading>
@@ -764,10 +688,8 @@ const Tour = () => {
             Deactivate any user but still see all their logged time in reports.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Team groups
           </Heading>
@@ -777,10 +699,8 @@ const Tour = () => {
             structure.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Max hours limits
           </Heading>
@@ -789,8 +709,6 @@ const Tour = () => {
             Set the maximum number of hours a contractor can report. Set it
             daily, weekly or monthly.
           </Text>
-          <br />
-          <hr />
           <br />
         </Box>
       </Box>
@@ -837,7 +755,7 @@ const Tour = () => {
         padding={"30px 20px"}
         justifyContent={"space-around"}
       >
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Track expenses
           </Heading>
@@ -847,10 +765,8 @@ const Tour = () => {
             incurred on the job.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Attach receipts
           </Heading>
@@ -859,10 +775,8 @@ const Tour = () => {
             Upload and save a receipt when you add an expense.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Unit pricing
           </Heading>
@@ -871,8 +785,6 @@ const Tour = () => {
             Instead of entering the bare sum, switch on the unit price per
             expense category.
           </Text>
-          <br />
-          <hr />
           <br />
         </Box>
       </Box>
@@ -918,7 +830,7 @@ const Tour = () => {
         padding={"30px 20px"}
         justifyContent={"space-around"}
       >
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Custom reports
           </Heading>
@@ -928,10 +840,8 @@ const Tour = () => {
             you need.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Meta data
           </Heading>
@@ -941,10 +851,8 @@ const Tour = () => {
             task types or milestones.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Sharing
           </Heading>
@@ -953,10 +861,8 @@ const Tour = () => {
             Make any report private or share it with a group of teammates.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Download
           </Heading>
@@ -966,10 +872,8 @@ const Tour = () => {
             math.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Highlighting
           </Heading>
@@ -979,10 +883,8 @@ const Tour = () => {
             reports.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Schedule by email
           </Heading>
@@ -991,8 +893,6 @@ const Tour = () => {
             Schedule any report to be sent to a list of specified emails on a
             daily, weekly, or monthly basis.
           </Text>
-          <br />
-          <hr />
           <br />
         </Box>
       </Box>
@@ -1046,8 +946,7 @@ const Tour = () => {
           <Text fontSize="md">
             Easily create an invoice based on tracked time and expenses.
           </Text>
-          {/* <br /> */}
-          {/* <hr /> */}
+
           <br />
         </Box>
         <Box textAlign={"start"} borderBottom={"1px solid gray"}>
@@ -1060,10 +959,8 @@ const Tour = () => {
             data in the invoice line items.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Change language
           </Heading>
@@ -1073,10 +970,8 @@ const Tour = () => {
             invoice label.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Copy invoices
           </Heading>
@@ -1086,10 +981,8 @@ const Tour = () => {
             copy invoices.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Track opens
           </Heading>
@@ -1099,10 +992,8 @@ const Tour = () => {
             them.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Download
           </Heading>
@@ -1111,10 +1002,8 @@ const Tour = () => {
             Make the final check of your future invoice and download a PDF file.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Internal notes
           </Heading>
@@ -1124,10 +1013,8 @@ const Tour = () => {
             cost of product or code for future invoices.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Log changes
           </Heading>
@@ -1137,10 +1024,8 @@ const Tour = () => {
             what and when.
           </Text>
           <br />
-          <hr />
-          <br />
         </Box>
-        <Box textAlign={"start"}>
+        <Box textAlign={"start"} borderBottom={"1px solid gray"}>
           <Heading size="lg" fontSize="20px">
             Integrations
           </Heading>
@@ -1149,8 +1034,6 @@ const Tour = () => {
             Connect with QuickBooks or Xero to sync your clients and copy
             invoices.
           </Text>
-          <br />
-          <hr />
           <br />
         </Box>
       </Box>
