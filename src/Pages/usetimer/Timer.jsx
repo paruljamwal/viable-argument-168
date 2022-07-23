@@ -52,10 +52,11 @@ const Convert = (time) => {
   h=h<10 ? "0"+h:h;
   min=min<10? "0"+min:min;
   sec=sec<10? "0"+sec:sec;
+
     return (`${h}:${min}:${sec}`)
   }
-
-console.log(value)
+  
+// console.log(value)
   return (
  <>
  <div>
