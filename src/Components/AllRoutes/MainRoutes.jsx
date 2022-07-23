@@ -24,14 +24,27 @@ const MainRoutes = () => {
       <Route path="/signup" element={<Register />}></Route>
       <Route path="/login" element={<Login />}></Route>
        <Route path="/project/:id" element={<Projects/>} />
-       <Route  path="/table" element={<TableData/>} />
        <Route path="/home" element={
        <PrivateRoute>
        <DetailForm/>
-      </PrivateRoute>
-       
+      </PrivateRoute>   
        } />
-   
+
+      <Route
+        path="/time"  element={
+          <PrivateRoute>
+            <TableData />
+          </PrivateRoute>
+        }
+      ></Route>
+      <Route
+        path="/clients"
+        element={
+          <PrivateRoute>
+            <Clients />
+          </PrivateRoute>
+        }
+      ></Route>
     </Routes>
   );
 };

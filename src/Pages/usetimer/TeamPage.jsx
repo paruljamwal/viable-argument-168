@@ -11,7 +11,7 @@ const TeamPage = () => {
         }
     ]
   return (
-    <div>
+    <div >
         <div className='all'>
           <div className='section1'>
             <div className='first'>{array[0].title}</div>

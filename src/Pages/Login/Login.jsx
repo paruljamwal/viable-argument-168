@@ -45,6 +45,9 @@ console.log(comeFrom)
       }
     });
   };
+  const GotoSingup = () => {
+    navigate("/signup");
+  };
   return (
     <div>
       <Box mt="9rem">
@@ -182,24 +185,16 @@ console.log(comeFrom)
             </button>
             <Box display={"flex"} gap="10px" w="80%" m="auto">
               <Text
-                color="#7c7c7c"
                 fontSize={"0.9rem"}
                 textDecoration="underline"
                 className={styles.login_other_options}
+                color="red"
+                textAlign={"center"}
+                onClick={GotoSingup}
               >
-                Login with SSO{" "}
+                IF you are not register with everhour then please click here to
+                signup
               </Text>{" "}
-              <Text fontSize={"0.9rem"} color="#7c7c7c">
-                A
-              </Text>{" "}
-              <Text
-                color="#7c7c7c"
-                fontSize={"0.9rem"}
-                textDecoration="underline"
-                className={styles.login_other_options}
-              >
-                More login options
-              </Text>
             </Box>
             <Text
               color="#7c7c7c"
