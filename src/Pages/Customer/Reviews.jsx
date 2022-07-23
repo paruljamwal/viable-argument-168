@@ -12,11 +12,15 @@ const Reviews = ({ tourText }) => {
       margin={"auto"}
       marginTop={"160px"}
       mb={"4rem"}
-     
     >
       {tourText.map((e) => {
         return (
-          <Box border={"1px solid grey"} padding={"20px"} borderRadius={"8px"}  >
+          <Box
+            border={"1px solid grey"}
+            padding={"20px"}
+            borderRadius={"8px"}
+            key={e.id}
+          >
             <GridItem> {e.text}</GridItem>
             <GridItem> {e.name}</GridItem>
           </Box>
