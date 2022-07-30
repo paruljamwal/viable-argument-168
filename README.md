@@ -3,7 +3,7 @@
 
 
 <h3>What is everhour.com -</h3>
-<p>"Everhour is the best time tracking tool for use with Basecamp. In the past, we have used Toggl and Tick and while they did integrate with Basecamp, it wasn't as seamless as it is with Everhour."</p>
+<p>"Everhour is an app that calculates your work hours, the work hours of your team, or a particular team member and pulls this data together into handy detailed reports. Add, remove, highlight data, change data columns, or add some extra information and simply share them within the app."</p>
 
 </hr>
 
