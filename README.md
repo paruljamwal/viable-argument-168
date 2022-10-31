@@ -7,6 +7,9 @@
 
 </hr>
 
+<h1>Tech Stack </h1>
+<h3>Redux, React, Chakara UI, Heroku , Git,  HTML5, CSS3, JavaScript, Node.js,  Express.js  </h3>
+<h3>Server: MongoDB</h3>
 
 
 <h1>Some visuals of our project </h1>
@@ -37,7 +40,4 @@ https://everhour-clone.netlify.app/
 https://medium.com/p/9cb6a84d762/edit
 
 </hr>
-<h1>Tech Stack </h1>
-<h3>Redux, React, Chakara UI, Heroku , Git,  HTML5, CSS3, JavaScript, Node.js,  Express.js  </h3>
 
-<h3>Server: MongoDB</h3>
