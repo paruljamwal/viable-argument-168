@@ -8,7 +8,17 @@
 </hr>
 
 <h1>Tech Stack </h1>
-<h3>Redux, React, Chakara UI, Heroku , Git,  HTML5, CSS3, JavaScript, Node.js,  Express.js  </h3>
+
+ 1. React
+ 2. Redux
+ 3. Heroku 
+ 4. Git
+ 5. HTML5
+ 6. CSS3
+ 7. JavaScript
+ 8. Node.js
+ 9. Express.js  
+ 10. chakara UI
 <h3>Server: MongoDB</h3>
 
 
